@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Certed Technologies</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Page Header -->
+    <section class="page-header bg-gradient py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-center mb-3">Our Blog</h1>
+            <p class="lead text-center">Insights, tips, and industry trends</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <!-- Blog Posts Container -->
+                    <div id="blog-posts-container">
+                        <!-- Blog posts will be loaded here by JavaScript -->
+                        <div class="text-center py-5">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Blog pagination" class="mt-4">
+                        <ul class="pagination justify-content-center" id="blog-pagination">
+                            <!-- Pagination will be loaded dynamically -->
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Search Widget -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3">Search Blog</h5>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="blogSearchInput"
+                                    placeholder="Search articles...">
+                                <button class="btn btn-primary" type="button" id="blogSearchBtn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3">Categories</h5>
+                            <ul class="list-unstyled" id="blog-categories">
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none" data-category="Technology">
+                                        <i class="fas fa-folder me-2"></i>Technology
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none" data-category="Career">
+                                        <i class="fas fa-folder me-2"></i>Career Development
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none" data-category="Industry">
+                                        <i class="fas fa-folder me-2"></i>Industry Insights
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none" data-category="Learning">
+                                        <i class="fas fa-folder me-2"></i>Learning Tips
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none" data-category="News">
+                                        <i class="fas fa-folder me-2"></i>News & Updates
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Recent Posts Widget -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3">Recent Posts</h5>
+                            <ul class="list-unstyled" id="recent-posts">
+                                <!-- Recent posts will be loaded dynamically -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tags Widget -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3">Popular Tags</h5>
+                            <div id="blog-tags">
+                                <span class="badge bg-secondary me-2 mb-2">AI</span>
+                                <span class="badge bg-secondary me-2 mb-2">Cloud Computing</span>
+                                <span class="badge bg-secondary me-2 mb-2">Data Science</span>
+                                <span class="badge bg-secondary me-2 mb-2">DevOps</span>
+                                <span class="badge bg-secondary me-2 mb-2">Cybersecurity</span>
+                                <span class="badge bg-secondary me-2 mb-2">Web Development</span>
+                                <span class="badge bg-secondary me-2 mb-2">Python</span>
+                                <span class="badge bg-secondary me-2 mb-2">Java</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/main.js"></script>
+    <script src="../public/js/blog.js"></script>
+    <script src="../public/js/components-loader.js"></script>
+</body>
+
+</html>

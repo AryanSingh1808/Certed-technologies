@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="../pages/index.html">
+            <i class="fas fa-graduation-cap"></i> Certed Technologies
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown">
+                        Courses
+                    </a>
+                    <ul class="dropdown-menu" id="categoriesDropdown">
+                        <li><a class="dropdown-item" href="../pages/courses.html">All Courses</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <!-- Categories will be loaded dynamically -->
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contact.html">Contact</a>
+                </li>
+                <li class="nav-item" id="authButtons">
+                    <!-- Auth buttons will be loaded dynamically -->
+                    <a class="btn btn-outline-primary btn-sm me-2" href="../pages/login.html">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                    <a class="btn btn-primary btn-sm" href="../pages/register.html">
+                        <i class="fas fa-user-plus"></i> Register
+                    </a>
+                </li>
+                <li class="nav-item dropdown d-none" id="userDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <img id="userAvatar" src="" alt="User" class="rounded-circle" width="32" height="32">
+                        <span id="userName"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="../pages/dashboard.html"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a></li>
+                        <li><a class="dropdown-item" href="/dashboard#enrolled"><i class="fas fa-book me-2"></i>My Courses</a></li>
+                        <li><a class="dropdown-item" href="/dashboard#wishlist"><i class="fas fa-heart me-2"></i>Wishlist</a></li>
+                        <li><a class="dropdown-item" href="/dashboard#profile"><i class="fas fa-user me-2"></i>Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#" id="logoutBtn"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

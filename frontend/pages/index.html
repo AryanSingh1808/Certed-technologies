@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Certed Technologies - Leading IT Training Institute offering professional courses in Web Development, Data Science, Cloud Computing, and more.">
+    <meta name="keywords" content="IT training, online courses, web development, data science, certification courses">
+    <title>Certed Technologies - Professional IT Training & Certification Courses</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-90">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-3 fw-bold text-white mb-4">
+                        Transform Your Career with <span class="text-warning">Professional IT Training</span>
+                    </h1>
+                    <p class="lead text-white-50 mb-4">
+                        Master in-demand skills with industry-expert instructors. Get certified and advance your career
+                        with hands-on training.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="./courses.html" class="btn btn-warning btn-lg px-5 py-3">
+                            <i class="fas fa-graduation-cap me-2"></i>Explore Courses
+                        </a>
+                        <a href="./contact.html" class="btn btn-outline-light btn-lg px-5 py-3">
+                            <i class="fas fa-phone me-2"></i>Request Callback
+                        </a>
+                    </div>
+                    <div class="d-flex flex-wrap gap-4 text-white">
+                        <div>
+                            <i class="fas fa-users fa-2x text-warning mb-2"></i>
+                            <p class="mb-0 fw-bold">50,000+</p>
+                            <small class="text-white-50">Students Trained</small>
+                        </div>
+                        <div>
+                            <i class="fas fa-book-open fa-2x text-warning mb-2"></i>
+                            <p class="mb-0 fw-bold">500+</p>
+                            <small class="text-white-50">Courses</small>
+                        </div>
+                        <div>
+                            <i class="fas fa-building fa-2x text-warning mb-2"></i>
+                            <p class="mb-0 fw-bold">1000+</p>
+                            <small class="text-white-50">Corporate Clients</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="../public/image/hero2.png" alt="IT Training" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Bar Section -->
+    <section class="search-bar-section py-4 bg-light shadow">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <form id="searchForm" class="d-flex gap-3">
+                        <div class="input-group flex-grow-1">
+                            <span class="input-group-text bg-white">
+                                <i class="fas fa-search text-primary"></i>
+                            </span>
+                            <input type="text" id="courseSearchInput" class="form-control form-control-lg"
+                                placeholder="Search for courses (e.g., Python, Java, Data Science...)">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg px-4">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Categories Section -->
+    <section class="categories-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Explore Our <span class="text-primary">Course Categories</span></h2>
+                <p class="lead text-muted">Choose from a wide range of professional IT training programs</p>
+            </div>
+            <div id="categoriesContainer" class="row g-4">
+                <!-- Categories will be loaded dynamically -->
+                <div class="col-12 text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="featured-courses-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Featured <span class="text-primary">Courses</span></h2>
+                <p class="lead text-muted">Most popular courses chosen by our students</p>
+            </div>
+            <div id="featuredCoursesContainer" class="row g-4">
+                <!-- Featured courses will be loaded dynamically -->
+                <div class="col-12 text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="./courses.html" class="btn btn-primary btn-lg px-5">
+                    View All Courses <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Why Choose <span class="text-primary">Certed Technologies?</span></h2>
+                <p class="lead text-muted">We are committed to providing quality education</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-chalkboard-teacher fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold">Expert Instructors</h5>
+                        <p class="text-muted">Learn from industry professionals with years of experience</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-certificate fa-3x text-success"></i>
+                        </div>
+                        <h5 class="fw-bold">Industry Certification</h5>
+                        <p class="text-muted">Get recognized certifications to boost your career</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-laptop-code fa-3x text-info"></i>
+                        </div>
+                        <h5 class="fw-bold">Hands-On Training</h5>
+                        <p class="text-muted">Work on real-world projects and build your portfolio</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-user-tie fa-3x text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold">Placement Support</h5>
+                        <p class="text-muted">Get career guidance and placement assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">What Our <span class="text-primary">Students Say</span></h2>
+                <p class="lead text-muted">Success stories from our alumni</p>
+            </div>
+            <div id="testimonialsContainer" class="row g-4">
+                <!-- Testimonials will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-3">Ready to Start Your Learning Journey?</h2>
+                    <p class="lead mb-0">Join thousands of students who have transformed their careers with us</p>
+                </div>
+                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                    <a href="./register.html" class="btn btn-warning btn-lg px-5 py-3">
+                        <i class="fas fa-user-plus me-2"></i>Enroll Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h3 class="fw-bold mb-3">Subscribe to Our Newsletter</h3>
+                    <p class="text-muted mb-4">Get the latest updates on courses, offers, and industry news</p>
+                    <form id="newsletterForm" class="row g-3 justify-content-center">
+                        <div class="col-md-6">
+                            <input type="email" class="form-control form-control-lg" id="newsletterEmail"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="submit" class="btn btn-primary btn-lg">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Enquiry Modal -->
+    <!-- Quick Enquiry Popup Modal - Professional Design -->
+    <div class="modal fade" id="quickEnquiryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+                <!-- Close Button -->
+                <button type="button"
+                    class="btn-close position-absolute top-0 end-0 m-3 bg-white rounded-circle p-2 shadow-sm"
+                    data-bs-dismiss="modal" aria-label="Close" style="z-index: 10; width: 32px; height: 32px;"></button>
+
+                <!-- Modal Body with Background Gradient -->
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <!-- Left Side - Gradient Background with Message -->
+                        <div class="col-md-5 d-flex align-items-center justify-content-center text-white p-4"
+                            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <div class="text-center">
+                                <!-- Avatar Image (optional) -->
+                                <div class="mb-4">
+                                    <img src="https://ui-avatars.com/api/?name=Certed+Tech&background=ffffff&color=667eea&size=120&bold=true"
+                                        alt="Avatar" class="rounded-circle border border-3 border-white shadow">
+                                </div>
+                                <h4 class="fw-bold mb-2">Master <span class="text-warning">IT Skills</span></h4>
+                                <p class="mb-0">for a Brighter <span class="text-warning fw-bold">Future!</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Right Side - Form -->
+                        <div class="col-md-7 bg-white p-4">
+                            <h5 class="fw-bold mb-3 text-center text-primary">Quick Enquiry</h5>
+                            <form id="quickEnquiryPopupForm">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control form-control-lg" name="name"
+                                        placeholder="Full Name" required style="border-radius: 10px;">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control form-control-lg" name="email"
+                                        placeholder="Email Address" required style="border-radius: 10px;">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control form-control-lg" name="phone"
+                                        pattern="[0-9]{10}" placeholder="Phone Number" required
+                                        style="border-radius: 10px;">
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select form-select-lg" name="courseName"
+                                        style="border-radius: 10px;">
+                                        <option value="">Select a Course</option>
+                                        <option>Full Stack Web Development</option>
+                                        <option>Frontend Development (HTML/CSS/JS/React)</option>
+                                        <option>Back End Web Development (Node / Django / Spring)</option>
+                                        <option>Data Science</option>
+                                        <option>DevOps Engineering</option>
+                                        <option>Cloud Computing (AWS / Azure / GCP)</option>
+                                        <option>AI & Machine Learning</option>
+                                        <option>Cybersecurity / Ethical Hacking</option>
+                                        <option>Network Administration & Engineering</option>
+                                        <option>Digital Marketing</option>
+                                        <option>UI/UX Design</option>
+                                        <option>Mobile App Development (iOS / Android / Cross-Platform)</option>
+                                        <option>RPA (Robotic Process Automation)</option>
+                                        <option>Big Data Engineering</option>
+                                        <option>Business Intelligence</option>
+                                        <option>Software Testing & QA Automation</option>
+                                        <option>Salesforce</option>
+                                        <option>Blockchain</option>
+                                        <option>IoT (Internet of Things)</option>
+                                        <option>Game Development</option>
+                                        <option>Embedded Systems</option>
+                                        <option>Graphics & Animation</option>
+                                        <option>E-Commerce & Shopify Development</option>
+                                        <option>Low-Code / No-Code Platforms</option>
+                                        <option>Data Engineering (ETL, Data Pipelines, Cloud Data)</option>
+                                        <option>Generative AI</option>
+                                        <option>Quantum Computing</option>
+                                        <option>5G (and Beyond) / Wireless Connectivity</option>
+                                        <option>AR/VR (Augmented Reality/Virtual Reality)</option>
+                                        <option>Synthetic Biology & Bio-engineering</option>
+                                        <option>Edge Computing & IoT</option>
+                                        <option>Decentralised Systems</option>
+                                        <option>Nanozymes & Advanced Materials / New Materials</option>
+                                        <option>Green Tech & Sustainable Energy Innovation</option>
+                                        <option>Collaborative Sensing & AI Networks</option>
+                                        <option>MEAN Stack + Gen-AI Diploma</option>
+                                        <option>MERN Stack + Gen-AI Diploma</option>
+                                        <option>Dot NET Full Stack + Gen-AI Diploma</option>
+                                        <option>Java Full Stack Developer + Gen-AI Diploma</option>
+                                        <option>Web Development + Gen-AI Diploma</option>
+                                        <option>Cyber Security + Gen-AI Diploma</option>
+                                        <option>Digital Marketing + Gen-AI Diploma</option>
+                                        <option>Advanced Excel & BI + Gen-AI Diploma</option>
+                                        <option>Motion Graphics PRO + Gen-AI Diploma</option>
+                                        <option>AI-Integrated Software Testing Diploma</option>
+                                        <option>Cloud & DevOps + Gen-AI Diploma</option>
+                                        <option>ERP / SAP Functional + Gen-AI Diploma</option>
+                                        <option>Data Analytics + Gen-AI Diploma</option>
+                                        <option>Business Analytics + Gen-AI Diploma</option>
+                                        <option>MIS Office Productivity + Gen-AI Diploma</option>
+                                        <option>Python Programming</option>
+                                        <option>Core Java + Advanced Java</option>
+                                        <option>.NET (C#, ASP .NET, MVC, .NET Core)</option>
+                                        <option>C / C++ Programming</option>
+                                        <option>Software Testing (Manual + Automation)</option>
+                                        <option>Cloud Computing (AWS / Azure / GCP)</option>
+                                        <option>DevOps (Docker, Kubernetes, CI-CD)</option>
+                                        <option>Linux Administration</option>
+                                        <option>VMware / Virtualization</option>
+                                        <option>Salesforce Training</option>
+                                        <option>Networking (CCNA, CCNP)</option>
+                                        <option>Network Security & Ethical Hacking</option>
+                                        <option>SOC / Blue Team / Red Team</option>
+                                        <option>Digital Marketing Master Program</option>
+                                        <option>Social Media Marketing & Ads</option>
+                                        <option>SEO & Content Strategy</option>
+                                        <option>Power BI / Tableau</option>
+                                        <option>Advanced Excel / MIS Executive</option>
+                                        <option>Financial Modelling & Valuation</option>
+                                        <option>Tally + GST</option>
+                                        <option>CRM / HRMS Tools (Zoho, SAP Success Factors)</option>
+                                        <option>Microsoft Office</option>
+                                        <option>Video Editing (Premiere / After Effects)</option>
+                                        <option>Hardware + Software Integrated</option>
+                                        <option>3D Animation / VFX</option>
+                                        <option>Flutter / React-Native</option>
+                                        <option>ChatGPT for Developers / AI Tools for Tech</option>
+                                        <option>Tech Career-Oriented Web Tools with AI</option>
+                                        <option>PLC / SCADA / Automation</option>
+                                        <option>Oil & Gas / Refinery Basics</option>
+                                        <option>Industrial Project Training (Final Year / 6-Month)</option>
+                                        <option>Production & Quality Engineering Training</option>
+                                        <option>AutoCAD</option>
+                                        <option>AutoCAD Electrical</option>
+                                        <option>AutoCAD Mechanical</option>
+                                        <option>Autodesk Inventor</option>
+                                        <option>Autodesk navisworks</option>
+                                        <option>Autodesk Revit</option>
+                                        <option>Autodesk Fusion 360</option>
+                                        <option>Autodesk SketchBook</option>
+                                        <option>CATIA V5</option>
+                                        <option>3D EXPERIENCE CATIA</option>
+                                        <option>SOLIDWORKS</option>
+                                        <option>NX</option>
+                                        <option>Solid Edge</option>
+                                        <option>Teamcenter</option>
+                                        <option>Addictive Manufacturing</option>
+                                        <option>SO GPS</option>
+                                        <option>Finite element Analysis (FEA)</option>
+                                        <option>Project Management</option>
+                                        <option>PLM (Project Lifecycle Management)</option>
+                                        <option>Automotive</option>
+                                        <option>GD&T (Geometric Dimensioning & Tolerancing)</option>
+                                        <option>Plastics</option>
+                                        <option>PTC ProENGINEER</option>
+                                        <option>Windchill</option>
+                                        <option>PTC Creo</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select form-select-lg" name="city" style="border-radius: 10px;">
+                                        <option value="">Select a Branch</option>
+                                        <option>Noida</option>
+                                        <option>Gwalior</option>
+                                        <option>Online</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold shadow"
+                                    style="border-radius: 10px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none;">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="#" class="floating-btn floating-enquiry" data-bs-toggle="modal" data-bs-target="#enquiryModal"
+            title="Quick Enquiry">
+            <i class="fas fa-comment-dots"></i>
+        </a>
+        <a href="https://wa.me/918920158923" target="_blank" class="floating-btn floating-whatsapp" title="WhatsApp Us">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" class="floating-btn floating-top d-none" id="backToTop" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../public/js/components-loader.js"></script>
+    <script src="../public/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Load page content
+        document.addEventListener('DOMContentLoaded', function () {
+            loadCategories();
+            loadFeaturedCourses();
+            loadTestimonials();
+        });
+    </script>
+</body>
+
+</html>
