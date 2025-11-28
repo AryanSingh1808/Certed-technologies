@@ -7,7 +7,8 @@ const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 
 // Load environment variables
-dotenv.config();
+// dotenv.config();
+dotenv.config({ path: path.join(__dirname, '..', '.env') });
 
 // Import database connection
 const connectDB = require('./configuration/database');
