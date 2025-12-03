@@ -1,6 +1,6 @@
 // Authentication JavaScript
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://api.certedtechnologies.com/api';
 
 // Login
 document.addEventListener('DOMContentLoaded', function() {
