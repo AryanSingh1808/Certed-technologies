@@ -71,8 +71,8 @@ app.use(cors({
 }));
 
 app.use(cors({
-    origin: ['https://certedtechnologies.com', 'https://www.certedtechnologies.com', 'http://localhost:5000'],
-    credentials: true
+  origin: ['https://certedtechnologies.com', 'https://www.certedtechnologies.com', 'http://localhost:5000'],
+  credentials: true
 }));
 
 // Body Parser Middleware

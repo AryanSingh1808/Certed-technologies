@@ -1,5 +1,4 @@
 // Component Loader - Loads header and footer dynamically
-const API_URL = '/api';
 
 document.addEventListener('DOMContentLoaded', function() {
     loadComponent('header-placeholder', '../components/header.html');
