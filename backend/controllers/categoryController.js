@@ -9,13 +9,13 @@ exports.getAllCategories = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      data: categories
+      data: categories,
     });
   } catch (error) {
     res.status(500).json({
       success: false,
       message: 'Error fetching categories',
-      error: error.message
+      error: error.message,
     });
   }
 };
@@ -28,19 +28,19 @@ exports.getCategoryById = async (req, res) => {
     if (!category) {
       return res.status(404).json({
         success: false,
-        message: 'Category not found'
+        message: 'Category not found',
       });
     }
 
     res.status(200).json({
       success: true,
-      data: category
+      data: category,
     });
   } catch (error) {
     res.status(500).json({
       success: false,
       message: 'Error fetching category',
-      error: error.message
+      error: error.message,
     });
   }
 };

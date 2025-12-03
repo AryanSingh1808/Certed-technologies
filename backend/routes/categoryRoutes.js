@@ -35,27 +35,27 @@ router.get('/:id', async (req, res) => {
     if (!category) {
       return res.status(404).json({
         success: false,
-        message: 'Category not found'
+        message: 'Category not found',
       });
     }
 
-    const courses = await Course.find({ 
-      category: req.params.id, 
-      isActive: true 
+    const courses = await Course.find({
+      category: req.params.id,
+      isActive: true
     }).limit(10);
 
     res.status(200).json({
       success: true,
       data: {
         category,
-        courses
-      }
+        courses,
+      },
     });
   } catch (error) {
     res.status(500).json({
       success: false,
       message: 'Error fetching category',
-      error: error.message
+      error: error.message,
     });
   }
 });
