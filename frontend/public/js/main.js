@@ -1,5 +1,5 @@
 // API Base URL
-const API_URL = 'https://certedtechnologies.com/api';
+const API_URL = '/api';
 
 // Utility: Get auth token
 function getAuthToken() {

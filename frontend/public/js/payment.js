@@ -1,5 +1,5 @@
 // Payment handling for Razorpay
-const API_URL = 'https://certedtechnologies.com/api';
+const API_URL = '/api';
 
 // Get course and user data from URL parameters or session storage
 const urlParams = new URLSearchParams(window.location.search);

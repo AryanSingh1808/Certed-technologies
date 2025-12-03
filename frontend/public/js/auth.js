@@ -1,6 +1,6 @@
 // Authentication JavaScript
 
-const API_URL = 'https://certedtechnologies.com/api';
+const API_URL = '/api';
 
 // Login
 document.addEventListener('DOMContentLoaded', function() {

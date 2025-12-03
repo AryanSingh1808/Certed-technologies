@@ -1,4 +1,4 @@
-const API_URL = 'https://certedtechnologies.com/api';
+const API_URL = '/api';
 let currentCourse = null;
 
 // Load Course Summary

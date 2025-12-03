@@ -71,7 +71,7 @@ app.use(cors({
 }));
 
 app.use(cors({
-    origin: ['https://certedtechnologies.com', 'https://www.certedtechnologies.com'],
+    origin: ['https://certedtechnologies.com', 'https://www.certedtechnologies.com', 'http://localhost:5000'],
     credentials: true
 }));
 
