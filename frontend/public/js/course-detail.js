@@ -1,6 +1,6 @@
 // Course Detail Page JavaScript
 
-const API_URL = '/api';
+const API_URL = 'http://localhost:5000/api';
 
 // Get course ID from URL
 function getCourseId() {

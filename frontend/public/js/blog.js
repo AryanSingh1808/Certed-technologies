@@ -1,4 +1,4 @@
-const API_URL = '/api';
+const API_URL = 'http://localhost:5000/api';
 
 // Load Blog Posts
 async function loadBlogPosts(page = 1, category = null) {

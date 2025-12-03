@@ -1,5 +1,5 @@
 // API Base URL
-const API_URL = '/api';
+const API_URL = 'http://localhost:5000/api';
 
 // Utility: Get auth token
 function getAuthToken() {
