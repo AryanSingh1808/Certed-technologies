@@ -62,7 +62,7 @@ function initializeAuthState() {
 // Load categories in header dropdown
 async function loadHeaderCategories() {
     try {
-        const response = await fetch(`${API_URL}/categories`);
+        // const response = await fetch(`${API_URL}/categories`);
         const result = await response.json();
 
         if (result.success) {
