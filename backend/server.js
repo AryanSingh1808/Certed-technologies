@@ -68,6 +68,10 @@ app.use(cors({
   credentials: true
 }));
 
+app.use(cors({
+    origin: ['https://certedtechnologies.com', 'https://www.certedtechnologies.com'],
+    credentials: true
+}));
 
 // Body Parser Middleware
 app.use(express.json({ limit: '10mb' }));

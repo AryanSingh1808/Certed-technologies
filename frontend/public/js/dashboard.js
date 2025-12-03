@@ -1,6 +1,6 @@
 // Dashboard JavaScript
 
-const API_URL = 'https://api.certedtechnologies.com/api';
+const API_URL = 'https://certedtechnologies.com/api';
 
 // Check authentication
 function checkAuth() {

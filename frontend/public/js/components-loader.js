@@ -1,5 +1,5 @@
 // Component Loader - Loads header and footer dynamically
-const API_URL = 'https://api.certedtechnologies.com/api';
+const API_URL = 'https://certedtechnologies.com/api';
 
 document.addEventListener('DOMContentLoaded', function() {
     loadComponent('header-placeholder', '../components/header.html');

@@ -1,4 +1,4 @@
-const API_URL = 'https://api.certedtechnologies.com/api';
+const API_URL = 'https://certedtechnologies.com/api';
 
 // Load Blog Posts
 async function loadBlogPosts(page = 1, category = null) {

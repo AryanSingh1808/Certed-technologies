@@ -1,6 +1,6 @@
 // Course Detail Page JavaScript
 
-const API_URL = 'https://api.certedtechnologies.com/api';
+const API_URL = 'https://certedtechnologies.com/api';
 
 // Get course ID from URL
 function getCourseId() {
