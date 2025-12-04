@@ -1,6 +1,6 @@
 // Authentication JavaScript
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = '/api';
 
 // Login
 document.addEventListener('DOMContentLoaded', function() {
